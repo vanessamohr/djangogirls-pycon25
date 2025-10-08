@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Django Girls Blog</title>
+    <!-- Tailwind CSS (for quick, modern styling) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Vue (optional, for later interactivity) -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  </head>
+  <body class="bg-gray-100 text-gray-800 font-sans">
+    <div id="app" class="max-w-3xl mx-auto px-4 py-8">
+      <header class="mb-8 border-b border-gray-300 pb-4">
+        <h1 class="text-4xl font-bold text-blue-600 hover:text-blue-800 transition">
+          <a href="/">Django Girls Blog</a>
+        </h1>
+      </header>
+
+      <article class="bg-white rounded-xl shadow-md p-6 mb-6 hover:shadow-lg transition">
+        <time class="text-sm text-gray-500 block mb-2">
+          published: 14.06.2014, 12:14
+        </time>
+        <h2 class="text-2xl font-semibold text-gray-900 mb-3 hover:text-blue-600 transition">
+          <a href="">My first post</a>
+        </h2>
+        <p class="leading-relaxed">
+          Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+        </p>
+      </article>
+
+      <article class="bg-white rounded-xl shadow-md p-6 mb-6 hover:shadow-lg transition">
+        <time class="text-sm text-gray-500 block mb-2">
+          published: 14.06.2014, 12:14
+        </time>
+        <h2 class="text-2xl font-semibold text-gray-900 mb-3 hover:text-blue-600 transition">
+          <a href="">My second post</a>
+        </h2>
+        <p class="leading-relaxed">
+          Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.
+        </p>
+      </article>
+    </div>
+
+    <script>
+      const { createApp } = Vue;
+
+      createApp({
+        data() {
+          return {
+            // You can add dynamic data later
+          };
+        },
+      }).mount("#app");
+    </script>
+  </body>
+</html>
