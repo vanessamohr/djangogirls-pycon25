@@ -1,1 +1,1 @@
-# This is a README# djangogirls-pycon25
+# This is a README
